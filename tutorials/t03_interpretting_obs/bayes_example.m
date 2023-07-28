@@ -91,12 +91,14 @@ VBR.in.anelastic.methods_list={'eburgers_psp';'andrade_psp';'xfit_mxw'; 'xfit_pr
 % lets do itttt
 VBR = VBR_spine(VBR);
 
+% this is a VBR look up table (LUT)
 
 contourf(test_T, test_phi, VBR.out.anelastic.eburgers_psp.V(:,:,1))
 contourf(test_T, test_phi, VBR.out.anelastic.eburgers_psp.Q(:,:,1))
 
 % whats the beest fit?
 method_name = 'eburgers_psp'; % andrade v eburger
+
 % straight minimization
 V = VBR.out.anelastic.(method_name).V(:,:,1)/1e3;
 chi_sq_V = ((V-obs_Vs)/sigma_Vs).^2;
@@ -143,3 +145,8 @@ Pjoint = joint_likeli .* prior_T .* prior_phi;
 contourf(test_T-273, test_phi, Pjoint)
 
 % try changing the melt to normal dist
+
+% ensemble MEAAAAAAANS.
+
+
+% simple 2d, LUT works OK. 3d even.
