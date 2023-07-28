@@ -7,3 +7,7 @@
 % 3. call the VBRc
 
 % 4. inspect output
+% shape of arrays (frequency dependence)
+% iterating over methods
+
+% 5. method citations

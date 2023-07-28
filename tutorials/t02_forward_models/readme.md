@@ -16,6 +16,8 @@ post-processing output from geodynamic forward model
 also:
 1. embedding the VBRc within a geodynamic calculation
 
+will look at:
+* density, composition (crust)
 
 ## Step 1:
 
