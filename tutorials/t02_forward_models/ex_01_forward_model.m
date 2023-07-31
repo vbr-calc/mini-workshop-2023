@@ -1,5 +1,15 @@
 
-clear
+clear; close all
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% run a half space cooling model
+%
+% will save off hspace_info.mat (with mesh, settings) and hspace_vars.mat (time
+% dependent variables)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 % put VBR in the path
 path_to_top_level_vbr=getenv('vbrdir');
@@ -47,3 +57,6 @@ disp(' ');disp('--------------------------------------------------');disp(' ')
 
 
 plotSummary(Vars,Info,'plot_every_dt',5);
+
+save('hspace_vars.mat', '-struct', 'Vars')
+save('hspace_info.mat', '-struct', 'Info')
