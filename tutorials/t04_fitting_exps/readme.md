@@ -2,6 +2,9 @@
 
 This tutorials works through fitting experimental data with a new anelastic method.
 
+* [presentation](https://docs.google.com/presentation/d/1Ib9DKGV-VrDD5U0tIBfH7r6pxUNYSfyThW8y947--Sw/edit?usp=sharing)
+* shortlink to presentation https://bit.ly/vbrcburgers
+
 ## tasks
 
 1. add a new anelastic method
